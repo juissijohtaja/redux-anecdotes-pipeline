@@ -22,7 +22,7 @@ const Filter = (props) => {
 
   return (
     <div style={style}>
-      filter <input id='anecdoteFilter' onChange={handleChange} /> 
+      filter <input id='anecdoteFilter' onChange={handleChange} />
       <button onClick={() => handleClearFilter()}>Clear filter</button>
     </div>
   )

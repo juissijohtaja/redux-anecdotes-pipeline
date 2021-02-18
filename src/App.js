@@ -11,7 +11,6 @@ const App = (props) => {
   useEffect(() => {
     props.initializeAnecdotes()
     console.log('props',props)
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
   return (
     <div>
@@ -19,7 +18,7 @@ const App = (props) => {
       <Filter />
       <Notification />
       <AnecdoteForm />
-      <AnecdoteList />  
+      <AnecdoteList />
     </div>
   )
 }
