@@ -1,4 +1,4 @@
-name: Deployment pipeline
+name: My Deployment Pipeline
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
     types: [opened, synchronize]
 
 jobs:
-  simple_deployment_pipeline:
+  my_deployment_pipeline:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
