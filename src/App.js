@@ -11,7 +11,7 @@ const App = (props) => {
   useEffect(() => {
     props.initializeAnecdotes()
     console.log('props',props)
-  },[])
+  },[props])
   return (
     <div>
       <h2>Anecdotes</h2>
