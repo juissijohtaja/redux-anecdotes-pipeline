@@ -5,6 +5,7 @@ import AnecdoteList from './components/AnecdoteList'
 import Notification from './components/Notification'
 import Filter from './components/Filter'
 import { initializeAnecdotes } from './reducers/anecdoteReducer'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 const App = (props) => {
   useEffect(() => {
@@ -12,13 +13,26 @@ const App = (props) => {
   },[props])
 
   return (
-    <div>
-      <h2>Anecdotes Pipes</h2>
-      <Filter />
-      <Notification />
-      <AnecdoteForm />
-      <AnecdoteList />
-    </div>
+    <Router>
+
+      <Switch>
+        <Route path="/health">
+          <p>ok</p>
+        </Route>
+        <Route path="/version">
+          <p>1</p>
+        </Route>
+        <Route path="/">
+          <div>
+            <h2>Anecdotes Pipes</h2>
+            <Filter />
+            <Notification />
+            <AnecdoteForm />
+            <AnecdoteList />
+          </div>
+        </Route>
+      </Switch>
+    </Router>
   )
 }
 
