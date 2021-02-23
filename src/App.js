@@ -10,7 +10,6 @@ import { initializeAnecdotes } from './reducers/anecdoteReducer'
 const App = (props) => {
   useEffect(() => {
     props.initializeAnecdotes()
-    console.log('props',props)
   },[props])
   return (
     <div>

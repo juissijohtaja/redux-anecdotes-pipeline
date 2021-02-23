@@ -19,7 +19,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "json-server -p3001 ./server/anecdotes.json",
-    "eslint": "eslint './**/*.{js,jsx}'"
+    "eslint": "eslint './**/*.{js,jsx}'",
+    "cypress:open": "cypress open"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "cypress": "^6.5.0",
     "deep-freeze": "0.0.1",
     "eslint-plugin-jest": "^24.1.5"
   }
