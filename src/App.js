@@ -13,7 +13,7 @@ const App = (props) => {
 
   return (
     <div>
-      <h2>Anecdotes</h2>
+      <h2>Anecdotes Pipes</h2>
       <Filter />
       <Notification />
       <AnecdoteForm />
