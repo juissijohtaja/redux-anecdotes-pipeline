@@ -6,11 +6,11 @@ import Notification from './components/Notification'
 import Filter from './components/Filter'
 import { initializeAnecdotes } from './reducers/anecdoteReducer'
 
-
 const App = (props) => {
   useEffect(() => {
     props.initializeAnecdotes()
   },[props])
+
   return (
     <div>
       <h2>Anecdotes</h2>
