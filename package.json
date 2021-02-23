@@ -20,7 +20,8 @@
     "eject": "react-scripts eject",
     "server": "json-server -p3001 ./server/anecdotes.json",
     "eslint": "eslint './**/*.{js,jsx}'",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "test:e2e": "cypress run"
   },
   "eslintConfig": {
     "extends": "react-app"
