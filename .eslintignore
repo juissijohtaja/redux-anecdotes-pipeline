@@ -2,3 +2,5 @@ webpack.config.js
 node_modules/
 dist/
 .eslintrc.js
+public/
+build/
