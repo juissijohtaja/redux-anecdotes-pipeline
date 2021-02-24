@@ -11,12 +11,13 @@ const port = process.env.PORT || 3000
 server.use(middlewares)
 server.use(router)
 
-//const express = require('express')
-//const path = require('path')
-//server.use(express.static(path.join(__dirname, 'build')))
-//server.get('/', function (req, res) {
-//  res.sendFile(path.join(__dirname, 'build', 'index.html'))
-//})
+const express = require('express')
+
+//server.use(express.static('build'))
+
+/* server.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'))
+}) */
 
 server.listen(port)
 
