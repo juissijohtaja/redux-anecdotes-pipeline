@@ -2,18 +2,21 @@
 const jsonServer = require('json-server')
 const server = jsonServer.create()
 const router = jsonServer.router('./server/anecdotes.json')
-const middlewares = jsonServer.defaults()
+const path = require('path')
+const middlewares = jsonServer.defaults({
+  static: path.join(__dirname, './build')
+})
 const port = process.env.PORT || 3000
 
 server.use(middlewares)
 server.use(router)
 
-const express = require('express')
-const path = require('path')
-server.use(express.static(path.join(__dirname, 'build2')))
-server.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'))
-})
+//const express = require('express')
+//const path = require('path')
+//server.use(express.static(path.join(__dirname, 'build')))
+//server.get('/', function (req, res) {
+//  res.sendFile(path.join(__dirname, 'build', 'index.html'))
+//})
 
 server.listen(port)
 

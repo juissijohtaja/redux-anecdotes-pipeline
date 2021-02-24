@@ -10,7 +10,7 @@
 cypress/videos/
 
 # production
-/build
+/public
 
 # misc
 .DS_Store
