@@ -16,12 +16,9 @@
     "build:ui": "rm -rf build && cd frontend && npm run build && cp -r build ../",
     "test": "react-scripts test",
     "server": "json-server -p3000 ./server/anecdotes.json",
-    "eslint": "eslint './**/*.{js,jsx}'",
+    "eslint": "cd frontend && eslint './**/*.{js,jsx}'",
     "cypress:open": "cypress open",
     "test:e2e": "cypress run"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -39,6 +36,8 @@
     "@testing-library/react": "^11.2.5",
     "cypress": "^6.5.0",
     "deep-freeze": "0.0.1",
-    "eslint-plugin-jest": "^24.1.5"
+    "eslint": "^6.8.0",
+    "eslint-plugin-jest": "^24.1.5",
+    "eslint-plugin-react": "^7.19.0"
   }
 }

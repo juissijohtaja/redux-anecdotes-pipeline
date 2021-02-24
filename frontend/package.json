@@ -19,7 +19,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eslint": "eslint './**/*.{js,jsx}'",
     "cypress:open": "cypress open",
     "test:e2e": "cypress run"
   },
@@ -41,7 +40,6 @@
   "devDependencies": {
     "@testing-library/react": "^11.2.5",
     "cypress": "^6.5.0",
-    "deep-freeze": "0.0.1",
-    "eslint-plugin-jest": "^24.1.5"
+    "deep-freeze": "0.0.1"
   }
 }
