@@ -35,7 +35,7 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "jkpipeline"
           heroku_email: "juha.koivu@outlook.com"
-          healthcheck: "https://jkpipeline.herokuapp.com/health"
+          #healthcheck: "https://jkpipeline.herokuapp.com/health"
           #checkstring: "ok"
-          delay: 5
+          #delay: 5
           #rollbackonhealthcheckfailed: true
