@@ -24,7 +24,7 @@ const App = (props) => {
         </Route>
         <Route path="/">
           <div>
-            <h2>Anecdotes Kokkeli</h2>
+            <h2>Anecdotes Vekkulit</h2>
             <Filter />
             <Notification />
             <AnecdoteForm />

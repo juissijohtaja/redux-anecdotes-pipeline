@@ -1,21 +1,24 @@
 {
-  "name": "redux-anecdotes-server",
+  "name": "redux-anecdotes",
   "version": "0.1.0",
   "private": true,
   "main": "server.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
-    "axios": "^0.21.1",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "json-server": "^0.15.1",
-    "path": "^0.12.7"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.0.1",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "serve": "^11.3.2"
   },
   "scripts": {
-    "start": "node server.js",
-    "build:ui": "rm -rf build && cd frontend && npm run build && cp -r build ../",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "server": "json-server -p3000 ./server/anecdotes.json",
     "eslint": "eslint './**/*.{js,jsx}'",
     "cypress:open": "cypress open",
     "test:e2e": "cypress run"
