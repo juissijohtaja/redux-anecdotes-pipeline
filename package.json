@@ -7,7 +7,9 @@
     "@testing-library/jest-dom": "^5.11.9",
     "axios": "^0.21.1",
     "cors": "^2.8.5",
+    "express": "^4.17.1",
     "json-server": "^0.15.1",
+    "path": "^0.12.7",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.1.1",
@@ -15,12 +17,14 @@
     "react-scripts": "3.0.1",
     "redux": "^4.0.1",
     "redux-devtools-extension": "^2.13.8",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "serve": "^11.3.2"
   },
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
     "build": "react-scripts build",
+    "build:ui": "rm -rf build && cd ../Full-Stack-Open-2019/Osa2/puhelinluettelo && npm run build --prod && cp -r build ../../../Full-Stack-Open-2019-Osa3",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "json-server -p3001 ./server/anecdotes.json",
