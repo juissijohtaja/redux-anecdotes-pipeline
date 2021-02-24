@@ -17,7 +17,7 @@
     "install:ui": "npm install && cd frontend && npm install",
     "test": "react-scripts test",
     "server": "json-server -p3000 ./server/anecdotes.json",
-    "eslint": "cd frontend && eslint './**/*.{js,jsx}'",
+    "eslint:ui": "cd frontend && npm run eslint",
     "cypress:open": "cypress open",
     "test:e2e": "cypress run"
   },
