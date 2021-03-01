@@ -20,11 +20,11 @@ const App = (props) => {
           <p>ok</p>
         </Route>
         <Route path="/version">
-          <p>5</p>
+          <p>6</p>
         </Route>
         <Route path="/">
           <div>
-            <h2>Anecdotes Vekkulit</h2>
+            <h2>Anecdotes - Final Pipeline</h2>
             <Filter />
             <Notification />
             <AnecdoteForm />
