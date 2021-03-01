@@ -5,7 +5,7 @@ on:
     branches:
       - demo
   pull_request:
-    branches: [main]
+    branches: [demo]
     types: [opened, synchronize]
 
 jobs:

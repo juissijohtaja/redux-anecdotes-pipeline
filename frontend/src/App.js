@@ -20,7 +20,7 @@ const App = (props) => {
           <p>ok</p>
         </Route>
         <Route path="/version">
-          <p>1</p>
+          <p>2</p>
         </Route>
         <Route path="/">
           <div>
